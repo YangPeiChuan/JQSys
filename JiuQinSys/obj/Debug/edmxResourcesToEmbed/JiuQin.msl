@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JiuQinModelStoreContainer" CdmEntityContainer="JiuQinEntities">
+    <EntitySetMapping Name="QuoteOrderMain">
+      <EntityTypeMapping TypeName="JiuQinModel.QuoteOrderMain">
+        <MappingFragment StoreEntitySet="QuoteOrderMain">
+          <ScalarProperty Name="no" ColumnName="no" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="effectDate" ColumnName="effectDate" />
+          <ScalarProperty Name="custID" ColumnName="custID" />
+          <ScalarProperty Name="custName" ColumnName="custName" />
+          <ScalarProperty Name="contact" ColumnName="contact" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="invoiceaddr" ColumnName="invoiceaddr" />
+          <ScalarProperty Name="taxRate" ColumnName="taxRate" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="userSeq" ColumnName="userSeq" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

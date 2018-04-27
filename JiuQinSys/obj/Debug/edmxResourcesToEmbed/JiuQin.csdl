@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JiuQinModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="QuoteOrderMain">
+    <Key>
+      <PropertyRef Name="no" />
+    </Key>
+    <Property Name="no" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="date" Type="DateTime" Precision="0" />
+    <Property Name="effectDate" Type="DateTime" Precision="0" />
+    <Property Name="custID" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Name="custName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="contact" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="invoiceaddr" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="taxRate" Type="Byte" />
+    <Property Name="remark" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="userSeq" Type="Byte" />
+  </EntityType>
+  <EntityContainer Name="JiuQinEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="QuoteOrderMain" EntityType="Self.QuoteOrderMain" />
+  </EntityContainer>
+</Schema>

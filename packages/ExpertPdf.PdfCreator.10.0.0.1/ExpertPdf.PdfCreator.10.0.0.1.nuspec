@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ExpertPdf.PdfCreator</id>
+    <version>10.0.0.1</version>
+    <title>ExpertPdf PdfCreator - Pdf Library for .NET</title>
+    <authors>Outside Software Inc.</authors>
+    <owners>Outside Software Inc.</owners>
+    <licenseUrl>http://www.html-to-pdf.net/EULA.aspx</licenseUrl>
+    <projectUrl>http://www.html-to-pdf.net/pdf-creator.aspx</projectUrl>
+    <iconUrl>http://www.html-to-pdf.net/banners/banner3.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>General features 
+
+- Add texts and image elements to the PDF documents and templates
+ - Render multipage images (TIFF) to PDF
+ - Add graphic elements like lines, rectangles, ellipses, circles, Bezier curves
+ - Create bookmarks for the PDF document
+ - Merge and split PDF files and streams with MergePdf and SplitPdf classes
+ - Create links to internal and external resources in the PDF document
+ - Create file attachments
+ - Create text notes
+ - Rotate PDF document pages
+ - Add viewer preferences
+ - Add document description
+ - Add fonts and color directly from .NET Font and Color structures
+
+
+Pdf security 
+
+- Add ordinary digital signatures
+ - Set user and owner passwords
+ - Encrypt PDF document content
+ - 40 and 128 bit encryption keys
+ - Set PDF document permissions (print, edit, copy)
+
+
+Html to pdf conversion 
+
+- Place the HTML to PDF conversion result in any position in PDF document
+ - Set the width and height in PDF of content rendered from HTML
+ - Add several html elements in the same document in any position
+ - Possibility to get the bounds of the rendered content in each rendered page
+ - Set the transparency for the rendered content
+ - Rotate the rendered PDF content
+ - Add HTML in templates that can repeated on each page of the PDF document
+ - Add HTML in header and footer of the PDF document
+
+
+RTF to pdf conversion 
+
+- Place the RTF to PDF conversion result in any position in PDF document
+ - Set the width and height in PDF of content rendered from RTF
+ - Add several RTF elements in the same document in any position
+ - Possibility to get the bounds of the rendered content in each rendered page
+ - Set the transparency for the rendered content
+ - Rotate the rendered PDF content
+ - Add RTF in templates that can repeated on each page of the PDF document 
+ - Add RTF in header and footer of the PDF document</description>
+    <summary>ExpertPDF Pdf Creator SDK is a .NET library built to enhance ExpertPdf HtmlToPdf Converter. The Pdf Creator emerged as a premium product with a large number of more general pdf related capabilities.</summary>
+    <copyright>Outside Software Inc.</copyright>
+    <tags>pdf-library pdf-tool pdf-sdk html-to-pdf pdf-generation pdf html-to-pdf-converter converter pdf-converter sdk pdf-creator pdf-builder pdf-creator</tags>
+    <references>
+      <reference file="epdfcreator.dll" />
+    </references>
+  </metadata>
+</package>

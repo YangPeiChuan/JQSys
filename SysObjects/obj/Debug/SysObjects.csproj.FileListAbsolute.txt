@@ -1,0 +1,44 @@
+C:\Users\ybcszb\Dropbox\JiuQinSys\SysObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ybcszb\Dropbox\JiuQinSys\SysObjects\bin\Debug\SysObjects.dll
+C:\Users\ybcszb\Dropbox\JiuQinSys\SysObjects\bin\Debug\SysObjects.pdb
+C:\Users\ybcszb\Dropbox\JiuQinSys\SysObjects\obj\Debug\SysObjects.dll
+C:\Users\ybcszb\Dropbox\JiuQinSys\SysObjects\obj\Debug\SysObjects.pdb
+C:\Users\ybcszb\Desktop\JiuQinSys\SysObjects\bin\Debug\SysObjects.dll
+C:\Users\ybcszb\Desktop\JiuQinSys\SysObjects\bin\Debug\SysObjects.pdb
+C:\Users\ybcszb\Desktop\JiuQinSys\SysObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ybcszb\Desktop\JiuQinSys\SysObjects\obj\Debug\SysObjects.dll
+C:\Users\ybcszb\Desktop\JiuQinSys\SysObjects\obj\Debug\SysObjects.pdb
+G:\JiuQinSys\SysObjects\bin\Debug\SysObjects.dll
+G:\JiuQinSys\SysObjects\bin\Debug\SysObjects.pdb
+G:\JiuQinSys\SysObjects\obj\Debug\ResolveAssemblyReference.cache
+G:\JiuQinSys\SysObjects\obj\Debug\SysObjects.dll
+G:\JiuQinSys\SysObjects\obj\Debug\SysObjects.pdb
+E:\Project\JiuQinSys\SysObjects\bin\Debug\SysObjects.dll
+E:\Project\JiuQinSys\SysObjects\bin\Debug\SysObjects.pdb
+E:\Project\JiuQinSys\SysObjects\obj\Debug\SysObjects.csprojResolveAssemblyReference.cache
+E:\Project\JiuQinSys\SysObjects\obj\Debug\SysObjects.dll
+E:\Project\JiuQinSys\SysObjects\obj\Debug\SysObjects.pdb
+D:\Project\JiuQinSys\JiuQinSys\SysObjects\bin\Debug\SysObjects.dll
+D:\Project\JiuQinSys\JiuQinSys\SysObjects\bin\Debug\SysObjects.pdb
+D:\Project\JiuQinSys\JiuQinSys\SysObjects\obj\Debug\SysObjects.csprojResolveAssemblyReference.cache
+D:\Project\JiuQinSys\JiuQinSys\SysObjects\obj\Debug\SysObjects.dll
+D:\Project\JiuQinSys\JiuQinSys\SysObjects\obj\Debug\SysObjects.pdb
+C:\Users\Ben\Dropbox\JiuQinSys\SysObjects\bin\Debug\SysObjects.dll
+C:\Users\Ben\Dropbox\JiuQinSys\SysObjects\bin\Debug\SysObjects.pdb
+C:\Users\Ben\Dropbox\JiuQinSys\SysObjects\obj\Debug\SysObjects.csprojResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\JiuQinSys\SysObjects\obj\Debug\SysObjects.dll
+C:\Users\Ben\Dropbox\JiuQinSys\SysObjects\obj\Debug\SysObjects.pdb
+D:\Dropbox\JiuQinSys\SysObjects\bin\Debug\SysObjects.dll
+D:\Dropbox\JiuQinSys\SysObjects\bin\Debug\SysObjects.pdb
+D:\Dropbox\JiuQinSys\SysObjects\obj\Debug\SysObjects.dll
+D:\Dropbox\JiuQinSys\SysObjects\obj\Debug\SysObjects.pdb
+D:\Dropbox\JiuQinSys\SysObjects\obj\Debug\SysObjects.csprojResolveAssemblyReference.cache
+D:\JiuQinSys\SysObjects\bin\Debug\SysObjects.dll
+D:\JiuQinSys\SysObjects\bin\Debug\SysObjects.pdb
+D:\JiuQinSys\SysObjects\obj\Debug\SysObjects.dll
+D:\JiuQinSys\SysObjects\obj\Debug\SysObjects.pdb
+D:\JiuQinSys\SysObjects\obj\Debug\SysObjects.csprojResolveAssemblyReference.cache
+C:\Users\1612007NB01\Desktop\JiuQinSys - 複製\SysObjects\bin\Debug\SysObjects.dll
+C:\Users\1612007NB01\Desktop\JiuQinSys - 複製\SysObjects\bin\Debug\SysObjects.pdb
+C:\Users\1612007NB01\Desktop\JiuQinSys - 複製\SysObjects\obj\Debug\SysObjects.dll
+C:\Users\1612007NB01\Desktop\JiuQinSys - 複製\SysObjects\obj\Debug\SysObjects.pdb

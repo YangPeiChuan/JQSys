@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JiuQinModelStoreContainer" CdmEntityContainer="JiuQinEntities1">
+    <EntitySetMapping Name="QuoteOrderMain">
+      <EntityTypeMapping TypeName="JiuQinModel.QuoteOrderMain">
+        <MappingFragment StoreEntitySet="QuoteOrderMain">
+          <ScalarProperty Name="no" ColumnName="no" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="effectDate" ColumnName="effectDate" />
+          <ScalarProperty Name="custID" ColumnName="custID" />
+          <ScalarProperty Name="custName" ColumnName="custName" />
+          <ScalarProperty Name="contact" ColumnName="contact" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="invoiceaddr" ColumnName="invoiceaddr" />
+          <ScalarProperty Name="taxRate" ColumnName="taxRate" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="userSeq" ColumnName="userSeq" />
+          <ScalarProperty Name="done" ColumnName="done" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuoteOrderSub">
+      <EntityTypeMapping TypeName="JiuQinModel.QuoteOrderSub">
+        <MappingFragment StoreEntitySet="QuoteOrderSub">
+          <ScalarProperty Name="pice" ColumnName="pice" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="productName" ColumnName="productName" />
+          <ScalarProperty Name="productID" ColumnName="productID" />
+          <ScalarProperty Name="orderno" ColumnName="orderno" />
+          <ScalarProperty Name="no" ColumnName="no" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

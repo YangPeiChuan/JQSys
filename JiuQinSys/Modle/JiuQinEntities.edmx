@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="JiuQinModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AssessmentOrderMain">
+          <Key>
+            <PropertyRef Name="no" />
+          </Key>
+          <Property Name="no" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="date" Type="date" />
+          <Property Name="effectDate" Type="date" />
+          <Property Name="custID" Type="char" MaxLength="8" />
+          <Property Name="custName" Type="varchar" MaxLength="50" />
+          <Property Name="contact" Type="varchar" MaxLength="50" />
+          <Property Name="phone" Type="char" MaxLength="20" />
+          <Property Name="fax" Type="char" MaxLength="20" />
+          <Property Name="mobile" Type="char" MaxLength="12" />
+          <Property Name="invoiceaddr" Type="varchar" MaxLength="120" />
+          <Property Name="taxRate" Type="tinyint" />
+          <Property Name="remark" Type="varchar" MaxLength="1000" />
+          <Property Name="userSeq" Type="tinyint" />
+          <Property Name="deal" Type="bit" />
+          <Property Name="done" Type="bit" />
+          <Property Name="quoteno" Type="char" MaxLength="11" />
+        </EntityType>
+        <EntityType Name="ContactPhone">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="type" />
+            <PropertyRef Name="orderno" />
+          </Key>
+          <Property Name="id" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="number" Type="char" MaxLength="20" />
+          <Property Name="type" Type="tinyint" Nullable="false" />
+          <Property Name="orderno" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="custid" />
+          </Key>
+          <Property Name="custid" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="rank" Type="tinyint" />
+          <Property Name="custName" Type="varchar" MaxLength="60" />
+          <Property Name="email" Type="varchar" MaxLength="60" />
+          <Property Name="sname" Type="varchar" MaxLength="50" />
+          <Property Name="unicode" Type="char" MaxLength="8" />
+          <Property Name="staff" Type="tinyint" />
+          <Property Name="invoiceaddr" Type="varchar" MaxLength="120" />
+          <Property Name="paybilladdr" Type="varchar" MaxLength="120" />
+          <Property Name="modifydate" Type="date" />
+        </EntityType>
+        <EntityType Name="PartPrepareOrderSub">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="quoteOrderNo" Type="char" MaxLength="11" />
+          <Property Name="orderNo" Type="tinyint" />
+          <Property Name="productId" Type="char" MaxLength="10" />
+          <Property Name="productName" Type="varchar" MaxLength="50" />
+          <Property Name="count" Type="smallint" />
+          <Property Name="time" Type="datetime" />
+        </EntityType>
+        <EntityType Name="PrepareOrderMain">
+          <Key>
+            <PropertyRef Name="no" />
+          </Key>
+          <Property Name="no" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="date" Type="date" />
+          <Property Name="quoteNo" Type="char" MaxLength="11" />
+          <Property Name="deliverDate" Type="date" />
+        </EntityType>
+        <EntityType Name="PrepareOrderSub">
+          <Key>
+            <PropertyRef Name="no" />
+            <PropertyRef Name="quoteNo" />
+            <PropertyRef Name="orderno" />
+          </Key>
+          <Property Name="no" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="quoteNo" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="orderno" Type="tinyint" Nullable="false" />
+          <Property Name="count" Type="smallint" />
+          <Property Name="isDisplayNameAndDescript" Type="bit" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="name" Type="char" MaxLength="50" />
+          <Property Name="brand" Type="varchar" MaxLength="50" />
+          <Property Name="type" Type="char" MaxLength="5" />
+          <Property Name="unit" Type="char" MaxLength="5" />
+          <Property Name="price" Type="int" />
+          <Property Name="descript" Type="varchar(max)" />
+          <Property Name="inventory" Type="int" />
+          <Property Name="buypoint" Type="int" />
+          <Property Name="buyday" Type="tinyint" />
+          <Property Name="stock" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PurchaseOrder">
+          <Key>
+            <PropertyRef Name="date" />
+            <PropertyRef Name="productNo" />
+          </Key>
+          <Property Name="date" Type="date" Nullable="false" />
+          <Property Name="productNo" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="count" Type="smallint" />
+          <Property Name="company" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="QuoteOrderMain">
+          <Key>
+            <PropertyRef Name="no" />
+          </Key>
+          <Property Name="no" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="date" Type="date" />
+          <Property Name="custID" Type="char" MaxLength="8" />
+          <Property Name="custName" Type="varchar" MaxLength="50" />
+          <Property Name="contact" Type="varchar" MaxLength="50" />
+          <Property Name="phone" Type="char" MaxLength="20" />
+          <Property Name="fax" Type="char" MaxLength="20" />
+          <Property Name="mobile" Type="char" MaxLength="12" />
+          <Property Name="invoiceaddr" Type="varchar" MaxLength="120" />
+          <Property Name="taxRate" Type="tinyint" />
+          <Property Name="remark" Type="varchar" MaxLength="1000" />
+          <Property Name="userSeq" Type="tinyint" />
+          <Property Name="deal" Type="bit" />
+          <Property Name="done" Type="bit" />
+          <Property Name="balance" Type="int" />
+        </EntityType>
+        <EntityType Name="QuoteOrderSub">
+          <Key>
+            <PropertyRef Name="no" />
+            <PropertyRef Name="orderno" />
+          </Key>
+          <Property Name="no" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="orderno" Type="tinyint" Nullable="false" />
+          <Property Name="productID" Type="char" MaxLength="10" />
+          <Property Name="productName" Type="varchar" MaxLength="50" />
+          <Property Name="count" Type="smallint" />
+          <Property Name="pice" Type="int" />
+          <Property Name="descript" Type="varchar(max)" />
+          <Property Name="isDisplayNameAndDescript" Type="bit" />
+        </EntityType>
+        <EntityType Name="StockChangeLog">
+          <Key>
+            <PropertyRef Name="time" />
+            <PropertyRef Name="productID" />
+          </Key>
+          <Property Name="time" Type="datetime" Nullable="false" />
+          <Property Name="productID" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="countBeforeEdit" Type="int" />
+          <Property Name="countAfterEdit" Type="int" />
+          <Property Name="descript" Type="varchar" MaxLength="200" />
+          <Property Name="userID" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="JiuQinModelStoreContainer">
+          <EntitySet Name="AssessmentOrderMain" EntityType="Self.AssessmentOrderMain" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ContactPhone" EntityType="Self.ContactPhone" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PartPrepareOrderSub" EntityType="Self.PartPrepareOrderSub" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PrepareOrderMain" EntityType="Self.PrepareOrderMain" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PrepareOrderSub" EntityType="Self.PrepareOrderSub" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PurchaseOrder" EntityType="Self.PurchaseOrder" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="QuoteOrderMain" EntityType="Self.QuoteOrderMain" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="QuoteOrderSub" EntityType="Self.QuoteOrderSub" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StockChangeLog" EntityType="Self.StockChangeLog" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="JiuQinModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="QuoteOrderMain">
+          <Key>
+            <PropertyRef Name="no" />
+          </Key>
+          <Property Name="no" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="date" Type="DateTime" Precision="0" />
+          <Property Name="custID" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+          <Property Name="custName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="contact" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="phone" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+          <Property Name="fax" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+          <Property Name="mobile" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+          <Property Name="invoiceaddr" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="taxRate" Type="Byte" />
+          <Property Name="remark" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="userSeq" Type="Byte" />
+          <Property Name="done" Type="Boolean" />
+          <Property Name="deal" Type="Boolean" />
+          <Property Name="balance" Type="Int32" />
+        </EntityType>
+        <EntityType Name="QuoteOrderSub">
+          <Key>
+            <PropertyRef Name="no" />
+            <PropertyRef Name="orderno" />
+          </Key>
+          <Property Name="no" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="orderno" Type="Byte" Nullable="false" />
+          <Property Name="productID" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="productName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="count" Type="Int16" />
+          <Property Name="pice" Type="Int32" />
+          <Property Name="descript" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="isDisplayNameAndDescript" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="JiuQinEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="QuoteOrderMain" EntityType="Self.QuoteOrderMain" />
+          <EntitySet Name="QuoteOrderSub" EntityType="Self.QuoteOrderSub" />
+          <EntitySet Name="PrepareOrderMain" EntityType="JiuQinModel.PrepareOrderMain" />
+          <EntitySet Name="PrepareOrderSub" EntityType="JiuQinModel.PrepareOrderSub" />
+          <EntitySet Name="AssessmentOrderMain" EntityType="JiuQinModel.AssessmentOrderMain" />
+          <EntitySet Name="Customer" EntityType="JiuQinModel.Customer" />
+          <EntitySet Name="ContactPhone" EntityType="JiuQinModel.ContactPhone" />
+          <EntitySet Name="PartPrepareOrderSub" EntityType="JiuQinModel.PartPrepareOrderSub" />
+          <EntitySet Name="StockChangeLog" EntityType="JiuQinModel.StockChangeLog" />
+          <EntitySet Name="Product" EntityType="JiuQinModel.Product" />
+          <EntitySet Name="PurchaseOrder" EntityType="JiuQinModel.PurchaseOrder" />
+        </EntityContainer>
+        <EntityType Name="PrepareOrderMain">
+          <Key>
+            <PropertyRef Name="no" />
+          </Key>
+          <Property Name="no" Type="String" Nullable="false" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Name="date" Type="DateTime" Precision="0" />
+          <Property Name="quoteNo" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Name="deliverDate" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="PrepareOrderSub">
+          <Key>
+            <PropertyRef Name="no" />
+            <PropertyRef Name="quoteNo" />
+            <PropertyRef Name="orderno" />
+          </Key>
+          <Property Name="no" Type="String" Nullable="false" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Name="quoteNo" Type="String" Nullable="false" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Name="orderno" Type="Byte" Nullable="false" />
+          <Property Name="count" Type="Int16" />
+          <Property Name="isDisplayNameAndDescript" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="AssessmentOrderMain">
+          <Key>
+            <PropertyRef Name="no" />
+          </Key>
+          <Property Name="no" Type="String" Nullable="false" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Name="date" Type="DateTime" Precision="0" />
+          <Property Name="effectDate" Type="DateTime" Precision="0" />
+          <Property Name="custID" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+          <Property Name="custName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="contact" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="phone" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+          <Property Name="fax" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+          <Property Name="mobile" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+          <Property Name="invoiceaddr" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="taxRate" Type="Byte" />
+          <Property Name="remark" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="userSeq" Type="Byte" />
+          <Property Name="deal" Type="Boolean" />
+          <Property Name="done" Type="Boolean" />
+          <Property Name="quoteno" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="custid" />
+          </Key>
+          <Property Name="custid" Type="String" Nullable="false" MaxLength="8" FixedLength="true" Unicode="false" />
+          <Property Name="rank" Type="Byte" />
+          <Property Name="custName" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="sname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="unicode" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+          <Property Name="staff" Type="Byte" />
+          <Property Name="invoiceaddr" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="paybilladdr" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="modifydate" Type="DateTime" Precision="0" />
+          <Property Name="email" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ContactPhone">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="type" />
+            <PropertyRef Name="orderno" />
+          </Key>
+          <Property Name="id" Type="String" Nullable="false" MaxLength="8" FixedLength="true" Unicode="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="number" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+          <Property Name="type" Type="Byte" Nullable="false" />
+          <Property Name="orderno" Type="Byte" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PartPrepareOrderSub">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="quoteOrderNo" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Name="orderNo" Type="Byte" />
+          <Property Name="productId" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="productName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="count" Type="Int16" />
+          <Property Name="time" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="StockChangeLog">
+          <Key>
+            <PropertyRef Name="time" />
+            <PropertyRef Name="productID" />
+          </Key>
+          <Property Name="time" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="productID" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="countBeforeEdit" Type="Int32" />
+          <Property Name="countAfterEdit" Type="Int32" />
+          <Property Name="descript" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="userID" Type="Byte" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+          <Property Name="brand" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="type" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="unit" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="price" Type="Int32" />
+          <Property Name="descript" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="inventory" Type="Int32" />
+          <Property Name="buypoint" Type="Int32" />
+          <Property Name="buyday" Type="Byte" />
+          <Property Name="stock" Type="Int16" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PurchaseOrder">
+          <Key>
+            <PropertyRef Name="date" />
+            <PropertyRef Name="productNo" />
+          </Key>
+          <Property Name="date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="productNo" Type="String" Nullable="false" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Name="count" Type="Int16" />
+          <Property Name="company" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="JiuQinModelStoreContainer" CdmEntityContainer="JiuQinEntities">
+          <EntitySetMapping Name="QuoteOrderMain">
+            <EntityTypeMapping TypeName="JiuQinModel.QuoteOrderMain">
+              <MappingFragment StoreEntitySet="QuoteOrderMain">
+                <ScalarProperty Name="balance" ColumnName="balance" />
+                <ScalarProperty Name="deal" ColumnName="deal" />
+                <ScalarProperty Name="no" ColumnName="no" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="custID" ColumnName="custID" />
+                <ScalarProperty Name="custName" ColumnName="custName" />
+                <ScalarProperty Name="contact" ColumnName="contact" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="fax" ColumnName="fax" />
+                <ScalarProperty Name="mobile" ColumnName="mobile" />
+                <ScalarProperty Name="invoiceaddr" ColumnName="invoiceaddr" />
+                <ScalarProperty Name="taxRate" ColumnName="taxRate" />
+                <ScalarProperty Name="remark" ColumnName="remark" />
+                <ScalarProperty Name="userSeq" ColumnName="userSeq" />
+                <ScalarProperty Name="done" ColumnName="done" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuoteOrderSub">
+            <EntityTypeMapping TypeName="JiuQinModel.QuoteOrderSub">
+              <MappingFragment StoreEntitySet="QuoteOrderSub">
+                <ScalarProperty Name="isDisplayNameAndDescript" ColumnName="isDisplayNameAndDescript" />
+                <ScalarProperty Name="descript" ColumnName="descript" />
+                <ScalarProperty Name="no" ColumnName="no" />
+                <ScalarProperty Name="orderno" ColumnName="orderno" />
+                <ScalarProperty Name="productID" ColumnName="productID" />
+                <ScalarProperty Name="productName" ColumnName="productName" />
+                <ScalarProperty Name="count" ColumnName="count" />
+                <ScalarProperty Name="pice" ColumnName="pice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PrepareOrderMain">
+            <EntityTypeMapping TypeName="JiuQinModel.PrepareOrderMain">
+              <MappingFragment StoreEntitySet="PrepareOrderMain">
+                <ScalarProperty Name="deliverDate" ColumnName="deliverDate" />
+                <ScalarProperty Name="quoteNo" ColumnName="quoteNo" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="no" ColumnName="no" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PrepareOrderSub">
+            <EntityTypeMapping TypeName="JiuQinModel.PrepareOrderSub">
+              <MappingFragment StoreEntitySet="PrepareOrderSub">
+                <ScalarProperty Name="isDisplayNameAndDescript" ColumnName="isDisplayNameAndDescript" />
+                <ScalarProperty Name="count" ColumnName="count" />
+                <ScalarProperty Name="orderno" ColumnName="orderno" />
+                <ScalarProperty Name="quoteNo" ColumnName="quoteNo" />
+                <ScalarProperty Name="no" ColumnName="no" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AssessmentOrderMain">
+            <EntityTypeMapping TypeName="JiuQinModel.AssessmentOrderMain">
+              <MappingFragment StoreEntitySet="AssessmentOrderMain">
+                <ScalarProperty Name="quoteno" ColumnName="quoteno" />
+                <ScalarProperty Name="done" ColumnName="done" />
+                <ScalarProperty Name="deal" ColumnName="deal" />
+                <ScalarProperty Name="userSeq" ColumnName="userSeq" />
+                <ScalarProperty Name="remark" ColumnName="remark" />
+                <ScalarProperty Name="taxRate" ColumnName="taxRate" />
+                <ScalarProperty Name="invoiceaddr" ColumnName="invoiceaddr" />
+                <ScalarProperty Name="mobile" ColumnName="mobile" />
+                <ScalarProperty Name="fax" ColumnName="fax" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="contact" ColumnName="contact" />
+                <ScalarProperty Name="custName" ColumnName="custName" />
+                <ScalarProperty Name="custID" ColumnName="custID" />
+                <ScalarProperty Name="effectDate" ColumnName="effectDate" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="no" ColumnName="no" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Customer">
+            <EntityTypeMapping TypeName="JiuQinModel.Customer">
+              <MappingFragment StoreEntitySet="Customer">
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="modifydate" ColumnName="modifydate" />
+                <ScalarProperty Name="paybilladdr" ColumnName="paybilladdr" />
+                <ScalarProperty Name="invoiceaddr" ColumnName="invoiceaddr" />
+                <ScalarProperty Name="staff" ColumnName="staff" />
+                <ScalarProperty Name="unicode" ColumnName="unicode" />
+                <ScalarProperty Name="sname" ColumnName="sname" />
+                <ScalarProperty Name="custName" ColumnName="custName" />
+                <ScalarProperty Name="rank" ColumnName="rank" />
+                <ScalarProperty Name="custid" ColumnName="custid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ContactPhone">
+            <EntityTypeMapping TypeName="JiuQinModel.ContactPhone">
+              <MappingFragment StoreEntitySet="ContactPhone">
+                <ScalarProperty Name="orderno" ColumnName="orderno" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="number" ColumnName="number" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PartPrepareOrderSub">
+            <EntityTypeMapping TypeName="JiuQinModel.PartPrepareOrderSub">
+              <MappingFragment StoreEntitySet="PartPrepareOrderSub">
+                <ScalarProperty Name="time" ColumnName="time" />
+                <ScalarProperty Name="count" ColumnName="count" />
+                <ScalarProperty Name="productName" ColumnName="productName" />
+                <ScalarProperty Name="productId" ColumnName="productId" />
+                <ScalarProperty Name="orderNo" ColumnName="orderNo" />
+                <ScalarProperty Name="quoteOrderNo" ColumnName="quoteOrderNo" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StockChangeLog">
+            <EntityTypeMapping TypeName="JiuQinModel.StockChangeLog">
+              <MappingFragment StoreEntitySet="StockChangeLog">
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="descript" ColumnName="descript" />
+                <ScalarProperty Name="countAfterEdit" ColumnName="countAfterEdit" />
+                <ScalarProperty Name="countBeforeEdit" ColumnName="countBeforeEdit" />
+                <ScalarProperty Name="productID" ColumnName="productID" />
+                <ScalarProperty Name="time" ColumnName="time" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Product">
+            <EntityTypeMapping TypeName="JiuQinModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="stock" ColumnName="stock" />
+                <ScalarProperty Name="buyday" ColumnName="buyday" />
+                <ScalarProperty Name="buypoint" ColumnName="buypoint" />
+                <ScalarProperty Name="inventory" ColumnName="inventory" />
+                <ScalarProperty Name="descript" ColumnName="descript" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="unit" ColumnName="unit" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="brand" ColumnName="brand" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PurchaseOrder">
+            <EntityTypeMapping TypeName="JiuQinModel.PurchaseOrder">
+              <MappingFragment StoreEntitySet="PurchaseOrder">
+                <ScalarProperty Name="company" ColumnName="company" />
+                <ScalarProperty Name="count" ColumnName="count" />
+                <ScalarProperty Name="productNo" ColumnName="productNo" />
+                <ScalarProperty Name="date" ColumnName="date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="無" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

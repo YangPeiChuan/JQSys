@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JiuQinModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AssessmentOrderMain">
+    <Key>
+      <PropertyRef Name="no" />
+    </Key>
+    <Property Name="no" Type="char" MaxLength="11" Nullable="false" />
+    <Property Name="date" Type="date" />
+    <Property Name="effectDate" Type="date" />
+    <Property Name="custID" Type="char" MaxLength="8" />
+    <Property Name="custName" Type="varchar" MaxLength="50" />
+    <Property Name="contact" Type="varchar" MaxLength="50" />
+    <Property Name="phone" Type="char" MaxLength="20" />
+    <Property Name="fax" Type="char" MaxLength="20" />
+    <Property Name="mobile" Type="char" MaxLength="12" />
+    <Property Name="invoiceaddr" Type="varchar" MaxLength="120" />
+    <Property Name="taxRate" Type="tinyint" />
+    <Property Name="remark" Type="varchar" MaxLength="1000" />
+    <Property Name="userSeq" Type="tinyint" />
+    <Property Name="deal" Type="bit" />
+    <Property Name="done" Type="bit" />
+    <Property Name="quoteno" Type="char" MaxLength="11" />
+  </EntityType>
+  <EntityType Name="ContactPhone">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="type" />
+      <PropertyRef Name="orderno" />
+    </Key>
+    <Property Name="id" Type="char" MaxLength="8" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="number" Type="char" MaxLength="20" />
+    <Property Name="type" Type="tinyint" Nullable="false" />
+    <Property Name="orderno" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="custid" />
+    </Key>
+    <Property Name="custid" Type="char" MaxLength="8" Nullable="false" />
+    <Property Name="rank" Type="tinyint" />
+    <Property Name="custName" Type="varchar" MaxLength="60" />
+    <Property Name="email" Type="varchar" MaxLength="60" />
+    <Property Name="sname" Type="varchar" MaxLength="50" />
+    <Property Name="unicode" Type="char" MaxLength="8" />
+    <Property Name="staff" Type="tinyint" />
+    <Property Name="invoiceaddr" Type="varchar" MaxLength="120" />
+    <Property Name="paybilladdr" Type="varchar" MaxLength="120" />
+    <Property Name="modifydate" Type="date" />
+  </EntityType>
+  <EntityType Name="PrepareOrderMain">
+    <Key>
+      <PropertyRef Name="no" />
+    </Key>
+    <Property Name="no" Type="char" MaxLength="11" Nullable="false" />
+    <Property Name="date" Type="date" />
+    <Property Name="quoteNo" Type="char" MaxLength="11" />
+    <Property Name="deliverDate" Type="date" />
+  </EntityType>
+  <EntityType Name="PrepareOrderSub">
+    <Key>
+      <PropertyRef Name="no" />
+      <PropertyRef Name="quoteNo" />
+      <PropertyRef Name="orderno" />
+    </Key>
+    <Property Name="no" Type="char" MaxLength="11" Nullable="false" />
+    <Property Name="quoteNo" Type="char" MaxLength="11" Nullable="false" />
+    <Property Name="orderno" Type="tinyint" Nullable="false" />
+    <Property Name="count" Type="smallint" />
+    <Property Name="isDisplayNameAndDescript" Type="bit" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="name" Type="char" MaxLength="50" />
+    <Property Name="brand" Type="varchar" MaxLength="50" />
+    <Property Name="type" Type="char" MaxLength="5" />
+    <Property Name="unit" Type="char" MaxLength="5" />
+    <Property Name="price" Type="int" />
+    <Property Name="descript" Type="varchar(max)" />
+    <Property Name="inventory" Type="int" />
+    <Property Name="buypoint" Type="int" />
+    <Property Name="buyday" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="QuoteOrderMain">
+    <Key>
+      <PropertyRef Name="no" />
+    </Key>
+    <Property Name="no" Type="char" MaxLength="11" Nullable="false" />
+    <Property Name="date" Type="date" />
+    <Property Name="custID" Type="char" MaxLength="8" />
+    <Property Name="custName" Type="varchar" MaxLength="50" />
+    <Property Name="contact" Type="varchar" MaxLength="50" />
+    <Property Name="phone" Type="char" MaxLength="20" />
+    <Property Name="fax" Type="char" MaxLength="20" />
+    <Property Name="mobile" Type="char" MaxLength="12" />
+    <Property Name="invoiceaddr" Type="varchar" MaxLength="120" />
+    <Property Name="taxRate" Type="tinyint" />
+    <Property Name="remark" Type="varchar" MaxLength="1000" />
+    <Property Name="userSeq" Type="tinyint" />
+    <Property Name="deal" Type="bit" />
+    <Property Name="done" Type="bit" />
+    <Property Name="balance" Type="int" />
+  </EntityType>
+  <EntityType Name="QuoteOrderSub">
+    <Key>
+      <PropertyRef Name="no" />
+      <PropertyRef Name="orderno" />
+    </Key>
+    <Property Name="no" Type="char" MaxLength="11" Nullable="false" />
+    <Property Name="orderno" Type="tinyint" Nullable="false" />
+    <Property Name="productID" Type="char" MaxLength="10" />
+    <Property Name="productName" Type="varchar" MaxLength="50" />
+    <Property Name="count" Type="smallint" />
+    <Property Name="pice" Type="int" />
+    <Property Name="descript" Type="varchar(max)" />
+    <Property Name="isDisplayNameAndDescript" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="JiuQinModelStoreContainer">
+    <EntitySet Name="AssessmentOrderMain" EntityType="Self.AssessmentOrderMain" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContactPhone" EntityType="Self.ContactPhone" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PrepareOrderMain" EntityType="Self.PrepareOrderMain" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PrepareOrderSub" EntityType="Self.PrepareOrderSub" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuoteOrderMain" EntityType="Self.QuoteOrderMain" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuoteOrderSub" EntityType="Self.QuoteOrderSub" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

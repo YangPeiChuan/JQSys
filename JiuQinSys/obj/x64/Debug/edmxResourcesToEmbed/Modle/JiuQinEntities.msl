@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JiuQinModelStoreContainer" CdmEntityContainer="JiuQinEntities">
+    <EntitySetMapping Name="QuoteOrderMain">
+      <EntityTypeMapping TypeName="JiuQinModel.QuoteOrderMain">
+        <MappingFragment StoreEntitySet="QuoteOrderMain">
+          <ScalarProperty Name="balance" ColumnName="balance" />
+          <ScalarProperty Name="deal" ColumnName="deal" />
+          <ScalarProperty Name="no" ColumnName="no" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="custID" ColumnName="custID" />
+          <ScalarProperty Name="custName" ColumnName="custName" />
+          <ScalarProperty Name="contact" ColumnName="contact" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="invoiceaddr" ColumnName="invoiceaddr" />
+          <ScalarProperty Name="taxRate" ColumnName="taxRate" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="userSeq" ColumnName="userSeq" />
+          <ScalarProperty Name="done" ColumnName="done" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuoteOrderSub">
+      <EntityTypeMapping TypeName="JiuQinModel.QuoteOrderSub">
+        <MappingFragment StoreEntitySet="QuoteOrderSub">
+          <ScalarProperty Name="isDisplayNameAndDescript" ColumnName="isDisplayNameAndDescript" />
+          <ScalarProperty Name="descript" ColumnName="descript" />
+          <ScalarProperty Name="no" ColumnName="no" />
+          <ScalarProperty Name="orderno" ColumnName="orderno" />
+          <ScalarProperty Name="productID" ColumnName="productID" />
+          <ScalarProperty Name="productName" ColumnName="productName" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="pice" ColumnName="pice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrepareOrderMain">
+      <EntityTypeMapping TypeName="JiuQinModel.PrepareOrderMain">
+        <MappingFragment StoreEntitySet="PrepareOrderMain">
+          <ScalarProperty Name="deliverDate" ColumnName="deliverDate" />
+          <ScalarProperty Name="quoteNo" ColumnName="quoteNo" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="no" ColumnName="no" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrepareOrderSub">
+      <EntityTypeMapping TypeName="JiuQinModel.PrepareOrderSub">
+        <MappingFragment StoreEntitySet="PrepareOrderSub">
+          <ScalarProperty Name="isDisplayNameAndDescript" ColumnName="isDisplayNameAndDescript" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="orderno" ColumnName="orderno" />
+          <ScalarProperty Name="quoteNo" ColumnName="quoteNo" />
+          <ScalarProperty Name="no" ColumnName="no" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="JiuQinModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="buyday" ColumnName="buyday" />
+          <ScalarProperty Name="buypoint" ColumnName="buypoint" />
+          <ScalarProperty Name="inventory" ColumnName="inventory" />
+          <ScalarProperty Name="descript" ColumnName="descript" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="brand" ColumnName="brand" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AssessmentOrderMain">
+      <EntityTypeMapping TypeName="JiuQinModel.AssessmentOrderMain">
+        <MappingFragment StoreEntitySet="AssessmentOrderMain">
+          <ScalarProperty Name="quoteno" ColumnName="quoteno" />
+          <ScalarProperty Name="done" ColumnName="done" />
+          <ScalarProperty Name="deal" ColumnName="deal" />
+          <ScalarProperty Name="userSeq" ColumnName="userSeq" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="taxRate" ColumnName="taxRate" />
+          <ScalarProperty Name="invoiceaddr" ColumnName="invoiceaddr" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="contact" ColumnName="contact" />
+          <ScalarProperty Name="custName" ColumnName="custName" />
+          <ScalarProperty Name="custID" ColumnName="custID" />
+          <ScalarProperty Name="effectDate" ColumnName="effectDate" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="no" ColumnName="no" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="JiuQinModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="modifydate" ColumnName="modifydate" />
+          <ScalarProperty Name="paybilladdr" ColumnName="paybilladdr" />
+          <ScalarProperty Name="invoiceaddr" ColumnName="invoiceaddr" />
+          <ScalarProperty Name="staff" ColumnName="staff" />
+          <ScalarProperty Name="unicode" ColumnName="unicode" />
+          <ScalarProperty Name="sname" ColumnName="sname" />
+          <ScalarProperty Name="custName" ColumnName="custName" />
+          <ScalarProperty Name="rank" ColumnName="rank" />
+          <ScalarProperty Name="custid" ColumnName="custid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactPhone">
+      <EntityTypeMapping TypeName="JiuQinModel.ContactPhone">
+        <MappingFragment StoreEntitySet="ContactPhone">
+          <ScalarProperty Name="orderno" ColumnName="orderno" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

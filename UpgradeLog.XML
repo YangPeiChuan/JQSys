@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="JiuQinSys">
+</Property><Property Name="方案檔" Value="C:\Users\Ben\Dropbox\JiuQinSys\JiuQinSys.sln">
+</Property><Property Name="使用者選項檔" Value="C:\Users\Ben\Dropbox\JiuQinSys\JiuQinSys.suo">
+</Property><Property Name="Date" Value="2016年1月6日">
+</Property><Property Name="Time" Value="下午 18:13">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="JiuQinSys.sln" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys.sln">
+</Event><Event ErrorLevel="0" Project="" Source="JiuQinSys.suo" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys.suo">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\JiuQinSys.csproj" Description="專案檔已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\JiuQinSys.csproj">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\Form1.cs" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\Form1.cs">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\Form1.Designer.cs" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\LoginForm.cs" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\LoginForm.cs">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\LoginForm.Designer.cs" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\LoginForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\MemoForm.cs" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\MemoForm.cs">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\MemoForm.Designer.cs" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\MemoForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\Object.cs" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\Object.cs">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\PortalForm.cs" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\PortalForm.cs">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\PortalForm.Designer.cs" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\PortalForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\Program.cs" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\Program.cs">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\Properties\AssemblyInfo.cs" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\Properties\Resources.Designer.cs" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\Properties\Settings.Designer.cs" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\login.ini" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\login.ini">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\Properties\Settings.settings" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\Form1.resx" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\Form1.resx">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\LoginForm.resx" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\LoginForm.resx">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\MemoForm.resx" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\MemoForm.resx">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\PortalForm.resx" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\PortalForm.resx">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\Properties\Resources.resx" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\JiuQinSys\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\JiuQinSys.csproj" Description="專案轉換成功">
+</Event><Event ErrorLevel="3" Project="JiuQinSys" Source="JiuQinSys\JiuQinSys.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SysObjects" Source="SysObjects\SysObjects.csproj" Description="專案檔已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\SysObjects\SysObjects.csproj">
+</Event><Event ErrorLevel="0" Project="SysObjects" Source="SysObjects\IniFileAccess.cs" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\SysObjects\IniFileAccess.cs">
+</Event><Event ErrorLevel="0" Project="SysObjects" Source="SysObjects\SqlDb.cs" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\SysObjects\SqlDb.cs">
+</Event><Event ErrorLevel="0" Project="SysObjects" Source="SysObjects\Properties\AssemblyInfo.cs" Description="檔案已成功備份為 C:\Users\Ben\Dropbox\JiuQinSys\Backup\SysObjects\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="SysObjects" Source="SysObjects\SysObjects.csproj" Description="專案轉換成功">
+</Event><Event ErrorLevel="3" Project="SysObjects" Source="SysObjects\SysObjects.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="JiuQinSys.sln" Description="方案轉換成功">
+</Event><Event ErrorLevel="3" Project="" Source="JiuQinSys.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="JiuQinSys" Source="JiuQinSys\JiuQinSys.csproj" Description="掃描完成: 專案檔不需要升級。">
+</Event><Event ErrorLevel="0" Project="SysObjects" Source="SysObjects\SysObjects.csproj" Description="掃描完成: 專案檔不需要升級。">
+</Event></UpgradeLog>

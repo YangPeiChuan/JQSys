@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JiuQinSys", "JiuQinSys\JiuQinSys.csproj", "{7DC7F4E5-C173-410F-A7C9-24394E9A593D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysObjects", "SysObjects\SysObjects.csproj", "{DADB5BF6-9E41-48AF-AFF4-EE41DAA4AF9F}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{046678A5-27A9-4E27-843B-3367E7DAA4AD}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://jiuqinsys.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = JiuQinSys\\JiuQinSys.csproj
+		SccProjectName1 = JiuQinSys
+		SccLocalPath1 = JiuQinSys
+		SccProjectUniqueName2 = Setup\\Setup.vdproj
+		SccProjectName2 = Setup
+		SccLocalPath2 = Setup
+		SccProjectUniqueName3 = SysObjects\\SysObjects.csproj
+		SccProjectName3 = SysObjects
+		SccLocalPath3 = SysObjects
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DC7F4E5-C173-410F-A7C9-24394E9A593D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC7F4E5-C173-410F-A7C9-24394E9A593D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC7F4E5-C173-410F-A7C9-24394E9A593D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7DC7F4E5-C173-410F-A7C9-24394E9A593D}.Debug|x64.Build.0 = Debug|Any CPU
+		{7DC7F4E5-C173-410F-A7C9-24394E9A593D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7DC7F4E5-C173-410F-A7C9-24394E9A593D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC7F4E5-C173-410F-A7C9-24394E9A593D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DC7F4E5-C173-410F-A7C9-24394E9A593D}.Release|x64.ActiveCfg = Release|x64
+		{7DC7F4E5-C173-410F-A7C9-24394E9A593D}.Release|x64.Build.0 = Release|x64
+		{7DC7F4E5-C173-410F-A7C9-24394E9A593D}.Release|x86.ActiveCfg = Release|Any CPU
+		{DADB5BF6-9E41-48AF-AFF4-EE41DAA4AF9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DADB5BF6-9E41-48AF-AFF4-EE41DAA4AF9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DADB5BF6-9E41-48AF-AFF4-EE41DAA4AF9F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DADB5BF6-9E41-48AF-AFF4-EE41DAA4AF9F}.Debug|x64.Build.0 = Debug|Any CPU
+		{DADB5BF6-9E41-48AF-AFF4-EE41DAA4AF9F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DADB5BF6-9E41-48AF-AFF4-EE41DAA4AF9F}.Debug|x86.Build.0 = Debug|Any CPU
+		{DADB5BF6-9E41-48AF-AFF4-EE41DAA4AF9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DADB5BF6-9E41-48AF-AFF4-EE41DAA4AF9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DADB5BF6-9E41-48AF-AFF4-EE41DAA4AF9F}.Release|x64.ActiveCfg = Release|Any CPU
+		{DADB5BF6-9E41-48AF-AFF4-EE41DAA4AF9F}.Release|x86.ActiveCfg = Release|Any CPU
+		{046678A5-27A9-4E27-843B-3367E7DAA4AD}.Debug|Any CPU.ActiveCfg = Debug
+		{046678A5-27A9-4E27-843B-3367E7DAA4AD}.Debug|x64.ActiveCfg = Debug
+		{046678A5-27A9-4E27-843B-3367E7DAA4AD}.Debug|x86.ActiveCfg = Debug
+		{046678A5-27A9-4E27-843B-3367E7DAA4AD}.Release|Any CPU.ActiveCfg = Release
+		{046678A5-27A9-4E27-843B-3367E7DAA4AD}.Release|x64.ActiveCfg = Release
+		{046678A5-27A9-4E27-843B-3367E7DAA4AD}.Release|x64.Build.0 = Release
+		{046678A5-27A9-4E27-843B-3367E7DAA4AD}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
